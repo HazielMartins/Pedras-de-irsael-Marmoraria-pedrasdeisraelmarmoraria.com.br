@@ -1,0 +1,281 @@
+/pedras-de-israel
+    index.html
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedras de Israel Marmoraria</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Pedras de Israel</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Elegância e Sofisticação em Mármore e Granito</h2>
+    <p>Transformando ambientes com qualidade e acabamento impecável.</p>
+    <a href="#contato" class="btn">Solicitar Orçamento</a>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre Nós</h2>
+  <p>
+    A Pedras de Israel Marmoraria é especializada em mármores, granitos e superfícies nobres.
+    Atendemos projetos residenciais e comerciais com excelência, precisão e alto padrão de acabamento.
+  </p>
+</section>
+
+<section id="servicos" class="section dark">
+  <h2>Nossos Serviços</h2>
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-kitchen-set"></i><h3>Bancadas</h3></div>
+    <div class="card"><i class="fa-solid fa-building"></i><h3>Fachadas</h3></div>
+    <div class="card"><i class="fa-solid fa-stairs"></i><h3>Escadas</h3></div>
+    <div class="card"><i class="fa-solid fa-sink"></i><h3>Pias e Lavatórios</h3></div>
+  </div>
+</section>
+
+<section id="contato" class="section dark">
+  <h2>Contato</h2>
+  <p>Entre em contato para solicitar seu orçamento personalizado.</p>
+  <a href="https://wa.me/5511986589247" class="btn whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+  </a>
+
+  <section id="galeria" class="section">
+  <h2>Galeria de Projetos</h2>
+  <div class="gallery">
+    <img src="images/foto1.jpg" alt="Projeto 1" onclick="abrirImagem(this)">
+    <img src="images/foto2.jpg" alt="Projeto 2" onclick="abrirImagem(this)">
+    <img src="images/foto3.jpg" alt="Projeto 3" onclick="abrirImagem(this)">
+    <img src="images/foto4.jpg" alt="Projeto 4" onclick="abrirImagem(this)">
+    <img src="images/foto5.jpg" alt="Projeto 5" onclick="abrirImagem(this)">
+    <img src="images/foto6.jpg" alt="Projeto 6" onclick="abrirImagem(this)">
+    <img src="images/foto12.jpg" alt="Projeto 7" onclick="abrirImagem(this)">
+    <img src="images/foto8.jpg" alt="Projeto 8" onclick="abrirImagem(this)">
+    <img src="images/foto10.jpg" alt="Projeto 9" onclick="abrirImagem(this)">
+    <img src="images/foto11.jpg" alt="Projeto 10" onclick="abrirImagem(this)">
+    <img src="images/foto13.jpg" alt="Projeto 11" onclick="abrirImagem(this)">
+    <img src="images/foto14.jpg" alt="Projeto 12" onclick="abrirImagem(this)">
+    
+  <section class="section dark">
+  <h2>O que nossos clientes dizem</h2>
+
+  <div class="testimonials">
+
+    <div class="testimonial-card">
+      <p>"Excelente qualidade e atendimento profissional!"</p>
+      <h4>— Cliente Satisfeito</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Super recomendo! Trabalho perfeito."</p>
+      <h4>— João Silva</h4>
+     
+ </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="fecharImagem()">
+  <img id="imagem-grande">
+</div>
+
+
+<footer>
+  <p>© 2026 Pedras de Israel Marmoraria - Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <style class="css">
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #000;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+.hero {
+  height: 100vh;
+  background: url('images/foto1.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+.section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.dark {
+  background: #1c1c1c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+  #lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+ .testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #222;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+ 
+ </style>
+<script class="js">
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+function abrirImagem(img) {
+  const lightbox = document.getElementById("lightbox");
+  const imagemGrande = document.getElementById("imagem-grande");
+
+  imagemGrande.src = img.src;
+  lightbox.style.display = "flex";
+}
+
+function fecharImagem() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+   
